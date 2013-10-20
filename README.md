@@ -1,5 +1,5 @@
 # redis-file [![Build Status](https://secure.travis-ci.org/loureirorg/redis-file.png)](http://travis-ci.org/loureirorg/redis-file)
-This a fake implementation of redis-rb for machines without Redis or development/test environments
+This a Ruby implementation of redis-rb for machines without Redis or development/test environments
 
 
 ## Installation
