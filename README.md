@@ -1,5 +1,5 @@
 # redis-file [![Build Status](https://secure.travis-ci.org/loureirorg/redis-file.png)](http://travis-ci.org/loureirorg/redis-file)
-This a Ruby implementation of redis-rb for machines without Redis or development/test environments
+This is a Ruby implementation of Redis for machines without Redis or development/test environments. In short, it emulates a fully functional Redis server, so you don't need to install a truly Redis. It's like a SQLite equivalent for Redis.
 
 
 ## Installation
@@ -15,15 +15,7 @@ Add it to your Gemfile:
 
 ## Versions
 
-redis-file currently supports redis-rb v3.0.0 or later, if you are using
-redis-rb v2.2.x install the version 0.3.x:
-
-    gem install redis-file -v "~> 0.3.0"
-
-or use the branch 0-3-x on your Gemfile:
-
-    gem "redis-file", :git => "git://github.com/loureirorg/redis-file.git", :branch => "0-3-x"
-
+redis-file follow the same version number of the fakeredis project. Changes at fakeredis will be adopted by this project.
 
 ## Usage
 
@@ -59,6 +51,7 @@ Or:
 
 ## Acknowledgements
 
+* [guilleiguaran](https://github.com/guilleiguaran): The creator of Fakeredis, which this project is based on
 * [dim](https://github.com/dim)
 * [czarneckid](https://github.com/czarneckid)
 * [obrie](https://github.com/obrie)
@@ -82,5 +75,5 @@ Or:
 
 ## Copyright
 
-Copyleft 2013 Daniel Loureiro (based on work of Guillermo Iguaran). See LICENSE for
+Public Domain - 2013 Daniel Loureiro (heavily based on the work of Guillermo Iguaran). See LICENSE for
 further details.
