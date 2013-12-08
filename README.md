@@ -15,7 +15,11 @@ Add it to your Gemfile:
 
 ## Versions
 
-redis-file follow the same version number of the fakeredis project. Changes at fakeredis will be adopted by this project.
+redis-file follow the same version number of the [fakeredis](https://github.com/guilleiguaran/fakeredis) project. Changes at fakeredis will be adopted by this project.
+
+[![redis-file Version](https://badge.fury.io/rb/redis-file.png)](http://badge.fury.io/rb/redis-file): redis-file (this gem)
+
+[![fakeredis Version](https://badge.fury.io/rb/fakeredis.png)](http://badge.fury.io/rb/fakeredis): fakredis (the gem which is based on)
 
 ## Usage
 
