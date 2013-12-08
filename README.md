@@ -1,6 +1,15 @@
 # redis-file [![Build Status](https://secure.travis-ci.org/loureirorg/redis-file.png)](http://travis-ci.org/loureirorg/redis-file)
 This is a Ruby implementation of Redis for machines without Redis or development/test environments. In short, it emulates a fully functional Redis server, so you don't need to install a truly Redis. It's like a SQLite equivalent for Redis.
 
+## Why use this instead a real Redis?
+
+Try to answer this question: why some developers use SQLite? Why Apple, Google, Microsoft and many others big software companies use SQLite, a weak and fragile database, in their products? Mozilla Firefox, Google Chrome, Apple Safari all theses products use SQLite. Why if there is a myriad of good and free databases? There are some answers for why use SQLite which are valid for redis-file too.
+
+1. your software will store few data. Safari, FF, Chrome uses SQLite to store the user's preferences - why use some Mysql, PostgreSQL to just store a single table with few records? At the same way, why use a full Redis to store few keys?
+2. your hosting provider charges you to use Redis and you want to save some money. redis-file is slow, because is written in Ruby (unlike Redis, which is written in C), it loads an entire Rails environment, and use disk. But for a small amount of data and/or a limited budget it can be better than use Redis.
+3. you are developing some projects which uses Redis and you don't want the data of one project conflit with other.
+
+These are some appropriate uses for redis-file, but for the most cases (namely for very large datasets) you have to use a true Redis server.
 
 ## Installation
 
